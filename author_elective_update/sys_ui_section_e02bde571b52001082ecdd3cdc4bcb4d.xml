@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="New Section" section_id="e02bde571b52001082ecdd3cdc4bcb4d" sys_domain="global" table="x_442386_grocmgr_item_master" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>item_price</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-17 20:57:47</sys_created_on>
+            <sys_id>f42b12971b52001082ecdd3cdc4bcb25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_442386_grocmgr_item_master" sys_domain="global" view="Default view">e02bde571b52001082ecdd3cdc4bcb4d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-17 20:57:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-17 20:57:47</sys_created_on>
+            <sys_id>782b12971b52001082ecdd3cdc4bcb25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_442386_grocmgr_item_master" sys_domain="global" view="Default view">e02bde571b52001082ecdd3cdc4bcb4d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-17 20:57:47</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quantity</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-17 20:57:47</sys_created_on>
+            <sys_id>f82b12971b52001082ecdd3cdc4bcb25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_442386_grocmgr_item_master" sys_domain="global" view="Default view">e02bde571b52001082ecdd3cdc4bcb4d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-17 20:57:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_442386_grocmgr_item_master</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-17 20:57:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e02bde571b52001082ecdd3cdc4bcb4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>New Section</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+            <sys_update_name>sys_ui_section_e02bde571b52001082ecdd3cdc4bcb4d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-17 20:57:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</application>
+        <file_path/>
+        <instance_id>e2095f7adb47b74491232f17d49619b0</instance_id>
+        <instance_name>dev91004</instance_name>
+        <name>sys_ui_section_e02bde571b52001082ecdd3cdc4bcb4d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="New Section" section_id="e02bde571b52001082ecdd3cdc4bcb4d" sys_domain="global" table="x_442386_grocmgr_item_master" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>item_price</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 20:57:47</sys_created_on><sys_id>f42b12971b52001082ecdd3cdc4bcb25</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_442386_grocmgr_item_master" sys_domain="global" view="Default view">e02bde571b52001082ecdd3cdc4bcb4d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 20:57:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 20:57:47</sys_created_on><sys_id>782b12971b52001082ecdd3cdc4bcb25</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_442386_grocmgr_item_master" sys_domain="global" view="Default view">e02bde571b52001082ecdd3cdc4bcb4d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 20:57:47</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>quantity</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 20:57:47</sys_created_on><sys_id>f82b12971b52001082ecdd3cdc4bcb25</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="New Section" display_value="New Section" name="x_442386_grocmgr_item_master" sys_domain="global" view="Default view">e02bde571b52001082ecdd3cdc4bcb4d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 20:57:47</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>New Section</caption><header>false</header><name>x_442386_grocmgr_item_master</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 20:57:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e02bde571b52001082ecdd3cdc4bcb4d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New Section</sys_name><sys_overrides/><sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package><sys_policy/><sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope><sys_update_name>sys_ui_section_e02bde571b52001082ecdd3cdc4bcb4d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 20:57:47</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>2135029878</payload_hash>
+        <record_name>Item Master</record_name>
+        <reverted_from/>
+        <source>176b82931b12001082ecdd3cdc4bcb93</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 20:57:47</sys_created_on>
+        <sys_id>b02b12971b52001082ecdd3cdc4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fb54c33a70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 20:57:47</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>3c2b1297db5200109115724ed5ca3426</update_guid>
+        <update_guid_history>3c2b1297db5200109115724ed5ca3426:2135029878</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 21:07:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>7a911523c0c243d8a5ab0586523923a4</sys_id>
+        <sys_metadata>e02bde571b52001082ecdd3cdc4bcb4d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Section</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_parent display_value="Item Master">7eebca171b12001082ecdd3cdc4bcbe7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_scope_delete display_value="">38742826a838431c9f962dcf1e6a6704</sys_scope_delete>
+        <sys_update_name>sys_ui_section_e02bde571b52001082ecdd3cdc4bcb4d</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_e02bde571b52001082ecdd3cdc4bcb4d">b02b12971b52001082ecdd3cdc4bcb27</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 21:07:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

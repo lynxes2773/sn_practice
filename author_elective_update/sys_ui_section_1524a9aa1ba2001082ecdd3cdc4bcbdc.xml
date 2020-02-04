@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Items" section_id="1524a9aa1ba2001082ecdd3cdc4bcbdc" sys_domain="global" table="x_442386_grocmgr_invoice" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>32d465ea1ba2001082ecdd3cdc4bcb95</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <text>Grand Total</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>32d465ea1ba2001082ecdd3cdc4bcb95</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>72d465ea1ba2001082ecdd3cdc4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>f2d465ea1ba2001082ecdd3cdc4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pre_tax_amount</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>76d465ea1ba2001082ecdd3cdc4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tax_rate</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>f6d465ea1ba2001082ecdd3cdc4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tax_amount</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>7ad465ea1ba2001082ecdd3cdc4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_amount</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+            <sys_id>fad465ea1ba2001082ecdd3cdc4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Items</caption>
+            <header>false</header>
+            <name>x_442386_grocmgr_invoice</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 19:17:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Items</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+            <sys_update_name>sys_ui_section_1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 19:17:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</application>
+        <file_path/>
+        <instance_id>e2095f7adb47b74491232f17d49619b0</instance_id>
+        <instance_name>dev91004</instance_name>
+        <name>sys_ui_section_1524a9aa1ba2001082ecdd3cdc4bcbdc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Items" section_id="1524a9aa1ba2001082ecdd3cdc4bcbdc" sys_domain="global" table="x_442386_grocmgr_invoice" version="3" view=""><sys_ui_annotation action="INSERT_OR_UPDATE"><is_plain_text>false</is_plain_text><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>32d465ea1ba2001082ecdd3cdc4bcb95</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><text>Grand Total</text><type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type></sys_ui_annotation><sys_ui_element action="INSERT_OR_UPDATE"><element>32d465ea1ba2001082ecdd3cdc4bcb95</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>72d465ea1ba2001082ecdd3cdc4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><sys_user/><type>annotation</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>f2d465ea1ba2001082ecdd3cdc4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>pre_tax_amount</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>76d465ea1ba2001082ecdd3cdc4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>tax_rate</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>f6d465ea1ba2001082ecdd3cdc4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>tax_amount</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>7ad465ea1ba2001082ecdd3cdc4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>invoice_amount</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:20:53</sys_created_on><sys_id>fad465ea1ba2001082ecdd3cdc4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Items" display_value="Items" name="x_442386_grocmgr_invoice" sys_domain="global" view="Default view">1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:20:53</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Items</caption><header>false</header><name>x_442386_grocmgr_invoice</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-27 19:17:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Items</sys_name><sys_overrides/><sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package><sys_policy/><sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope><sys_update_name>sys_ui_section_1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-27 19:17:46</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1055854747</payload_hash>
+        <record_name>Invoice</record_name>
+        <reverted_from/>
+        <source>176b82931b12001082ecdd3cdc4bcb93</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-27 19:20:53</sys_created_on>
+        <sys_id>b6d465ea1ba2001082ecdd3cdc4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fe87313b20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-27 19:20:53</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>32d465ea95a200103d2aa9440ccc5c9a</update_guid>
+        <update_guid_history>32d465ea95a200103d2aa9440ccc5c9a:-1055854747,19a4a1ea4ba200105641ffaba51e9c44:1621526276,5124a9aac4a20010f942a8f2c673caf8:1718027295</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-27 19:21:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0eec5e01630f49c68819a625569061c1</sys_id>
+        <sys_metadata>1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Items</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_parent display_value="Invoice">cc3f3ca61b22001082ecdd3cdc4bcbbc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_scope_delete display_value="">38742826a838431c9f962dcf1e6a6704</sys_scope_delete>
+        <sys_update_name>sys_ui_section_1524a9aa1ba2001082ecdd3cdc4bcbdc</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_1524a9aa1ba2001082ecdd3cdc4bcbdc">b6d465ea1ba2001082ecdd3cdc4bcb9a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-27 19:21:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

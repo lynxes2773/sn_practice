@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_442386_grocmgr_invoice_lineitem</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Process Invoice</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var inv = new GlideRecord('x_442386_grocmgr_invoice');
+	gs.info('current.invoice.number: '+current.invoice.number);
+	inv.addQuery('number', current.invoice.number);
+//	inv.setLimit(1);
+	inv.query();	
+	
+	var liAmount =0;
+	var invAmt =0;
+	gs.info('inv.getRowCount(): ' + inv.getRowCount());
+	if(inv.next())
+	{
+		invAmt = inv.getValue('pre_tax_amount');
+		var itm = new GlideRecord('x_442386_grocmgr_item_master');
+		gs.info('current.item.number: '+current.item.number);
+		itm.addQuery('number', current.item.number);
+		itm.query();
+		while(itm.next())
+		{
+			var qty = parseInt(current.quantity);
+			var prc = parseInt(itm.getValue('item_price'));
+			liAmount = qty*price;
+			gs.info('liAmount: '+liAmount);
+			invAmt = invAmt+liAmount;
+		}
+	}
+	gs.info('invAmt: '+invAmt);
+	
+	inv.setValue('pre_tax_amount', invAmt);
+	//inv.setValue('pre_tax_amount', '1000');
+	inv.update();
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-29 21:33:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>946018171ba2001082ecdd3cdc4bcba6</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Process Invoice</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_update_name>sys_script_946018171ba2001082ecdd3cdc4bcba6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-31 20:13:35</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=946018171ba2001082ecdd3cdc4bcba6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</application>
+        <file_path/>
+        <instance_id>e2095f7adb47b74491232f17d49619b0</instance_id>
+        <instance_name>dev91004</instance_name>
+        <name>sys_script_946018171ba2001082ecdd3cdc4bcba6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_442386_grocmgr_invoice_lineitem&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Process Invoice&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var inv = new GlideRecord('x_442386_grocmgr_invoice');
+	gs.info('current.invoice.number: '+current.invoice.number);
+	inv.addQuery('number', current.invoice.number);
+//	inv.setLimit(1);
+	inv.query();	
+	
+	var liAmount =0;
+	var invAmt =0;
+	gs.info('inv.getRowCount(): ' + inv.getRowCount());
+	if(inv.next())
+	{
+		invAmt = inv.getValue('pre_tax_amount');
+		var itm = new GlideRecord('x_442386_grocmgr_item_master');
+		gs.info('current.item.number: '+current.item.number);
+		itm.addQuery('number', current.item.number);
+		itm.query();
+		while(itm.next())
+		{
+			var qty = parseInt(current.quantity);
+			var prc = parseInt(itm.getValue('item_price'));
+			liAmount = qty*price;
+			gs.info('liAmount: '+liAmount);
+			invAmt = invAmt+liAmount;
+		}
+	}
+	gs.info('invAmt: '+invAmt);
+	
+	inv.setValue('pre_tax_amount', invAmt);
+	//inv.setValue('pre_tax_amount', '1000');
+	inv.update();
+	
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-29 21:33:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;946018171ba2001082ecdd3cdc4bcba6&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;Process Invoice&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Grocery Manager" source="x_442386_grocmgr"&gt;1b6b82931b12001082ecdd3cdc4bcb91&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Grocery Manager"&gt;1b6b82931b12001082ecdd3cdc4bcb91&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_946018171ba2001082ecdd3cdc4bcba6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-31 20:13:35&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=946018171ba2001082ecdd3cdc4bcba6"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1157740671</payload_hash>
+        <record_name>Process Invoice</record_name>
+        <reverted_from/>
+        <source>176b82931b12001082ecdd3cdc4bcb93</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-31 20:13:35</sys_created_on>
+        <sys_id>b5471ab71b22001082ecdd3cdc4bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ffd3cc3640000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-31 20:13:35</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>bd471ab72c220010a1d84f2e5143e0f2</update_guid>
+        <update_guid_history>bd471ab72c220010a1d84f2e5143e0f2:-1157740671,c116da37942200102cf3107b92897059:-2019194254,0a655a377222001085ce443c455b812f:-2025971534,62c4def357220010ec9a8d686a67528e:-1333100080,8206a9275b66001070357b245f2fc5f9:-2051259814,dd35ade349660010a4df8216f7234a4a:-252926975,62152de303660010aafe018bf09528bc:-875835471,63b42da3a06600105569dd02c6c011c6:-1305432247,3514ed6345660010c6146f5c7e198a5c:2138047098,f7f2a963ca6600105d7b54ea9a84aab2:-2109383799,7632ed23bb6600101372b6d78a0d49a4:1223804666,8b6fd5af71260010b9e349effdc0d3e5:-169885510,4d2e45ef0ae20010c2ac6dcd466f839b:-1466135782,8a4cc96faee200104d83400655fb5848:-664494167,29cac12fd3e200109c3b45f3f00c9796:-635984855,a0b901eb81e20010240a89355c1794bf:-2066232436,1c794dabcfe20010390051cb94dfb8d9:-549772963,a8f6092bfde20010458c4b68965bbf73:-2066232436,2d4d189fb3a2001068536111ffe58a0d:-110937845,e29a549ff6a20010e4b79e21018fe534:1061402211,b90a185fa3a20010b02ba0baa9dd03e3:1791474377,c5f8941f3ea200102bfeb7e36cc9e4ce:424533467,29389cdba0a200105705390f50ef2ff9:142370586,ddf790db40a200106cda8f55f6076a42:-2059273826,328714db1ea200100ab01901938811b6:-1022616016,1c67d09bbaa20010eec7200366dd30a1:230447459,1f56909b39a20010e7c2883f5a1baf9a:-1022616016</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 20:10:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>724280f7eaa94867bb17d4fd9cd3bc21</sys_id>
+        <sys_metadata>946018171ba2001082ecdd3cdc4bcba6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Process Invoice</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_parent display_value="Invoice Lineitem">74b6096e1b22001082ecdd3cdc4bcb75</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_scope_delete display_value="">38742826a838431c9f962dcf1e6a6704</sys_scope_delete>
+        <sys_update_name>sys_script_946018171ba2001082ecdd3cdc4bcba6</sys_update_name>
+        <sys_update_version display_value="sys_script_946018171ba2001082ecdd3cdc4bcba6">b5471ab71b22001082ecdd3cdc4bcbf3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 20:10:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

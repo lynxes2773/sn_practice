@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Upon entering a value in the Quantity field, calculate and set the value of the Amount field as the product of the Item's price with the quantity.</description>
+        <field>quantity</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Calculate Lineitem Amount</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   var qty = g_form.getValue("quantity");
+   var item = new GlideRecord('x_442386_grocmgr_item_master');
+	var price = 0;
+   item.addQuery('number', newValue.item);
+   item.query();
+   if(item.next())
+   {
+	price=item.item_price;
+   }
+	
+	alert(price);
+   
+	
+   //var amt = parseInt(qty) * parseInt(price);
+     // g_form.setValue("amount", amt);
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-27 20:58:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8f49f9aa1be2001082ecdd3cdc4bcb62</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Calculate Lineitem Amount</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_update_name>sys_script_client_8f49f9aa1be2001082ecdd3cdc4bcb62</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-27 21:35:17</sys_updated_on>
+        <table>x_442386_grocmgr_invoice_lineitem</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</application>
+        <file_path/>
+        <instance_id>e2095f7adb47b74491232f17d49619b0</instance_id>
+        <instance_name>dev91004</instance_name>
+        <name>sys_script_client_8f49f9aa1be2001082ecdd3cdc4bcb62</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Upon entering a value in the Quantity field, calculate and set the value of the Amount field as the product of the Item's price with the quantity.&lt;/description&gt;&lt;field&gt;quantity&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Calculate Lineitem Amount&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   var qty = g_form.getValue("quantity");
+   var item = new GlideRecord('x_442386_grocmgr_item_master');
+	var price = 0;
+   item.addQuery('number', newValue.item);
+   item.query();
+   if(item.next())
+   {
+	price=item.item_price;
+   }
+	
+	alert(price);
+   
+	
+   //var amt = parseInt(qty) * parseInt(price);
+     // g_form.setValue("amount", amt);
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-27 20:58:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8f49f9aa1be2001082ecdd3cdc4bcb62&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Calculate Lineitem Amount&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Grocery Manager" source="x_442386_grocmgr"&gt;1b6b82931b12001082ecdd3cdc4bcb91&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Grocery Manager"&gt;1b6b82931b12001082ecdd3cdc4bcb91&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8f49f9aa1be2001082ecdd3cdc4bcb62&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-27 21:35:17&lt;/sys_updated_on&gt;&lt;table&gt;x_442386_grocmgr_invoice_lineitem&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-824858728</payload_hash>
+        <record_name>Calculate Lineitem Amount</record_name>
+        <reverted_from/>
+        <source>176b82931b12001082ecdd3cdc4bcb93</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-27 21:35:18</sys_created_on>
+        <sys_id>37938e661b26001082ecdd3cdc4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fe8ee21f20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-27 21:35:18</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>bf938e6672260010a1b76a786410c4ba</update_guid>
+        <update_guid_history>bf938e6672260010a1b76a786410c4ba:-824858728,04a286e6422600107c0d40e88785ece4:550667241,e9118e66c426001052a30d8b32fb3368:-973170820,519ff526e62600106d05386db7c789c4:793177004,e56ffd629426001055bb85ef5c94415d:1956749389,271cb922bf260010655bd301848292ca:-1779228854,9edbbd2245260010a20d8cabca8e800f:-1122713365,bb3b752e26e20010ebcd76cdb7c3bf8a:-1277524103</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-27 21:50:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>03044f6f493748d9803255a8a4f6bb01</sys_id>
+        <sys_metadata>8f49f9aa1be2001082ecdd3cdc4bcb62</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Lineitem Amount</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_parent display_value="Invoice Lineitem">74b6096e1b22001082ecdd3cdc4bcb75</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_scope_delete display_value="">38742826a838431c9f962dcf1e6a6704</sys_scope_delete>
+        <sys_update_name>sys_script_client_8f49f9aa1be2001082ecdd3cdc4bcb62</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8f49f9aa1be2001082ecdd3cdc4bcb62">37938e661b26001082ecdd3cdc4bcbbb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-27 21:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_442386_grocmgr_stock_master</description>
+        <name>x_442386_grocmgr_stock_master</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 20:03:24</sys_created_on>
+        <sys_id>7baec61b1b12001082ecdd3cdc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_442386_grocmgr_stock_master</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_update_name>sys_security_acl_7baec61b1b12001082ecdd3cdc4bcba7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 20:03:24</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</application>
+        <file_path/>
+        <instance_id>e2095f7adb47b74491232f17d49619b0</instance_id>
+        <instance_name>dev91004</instance_name>
+        <name>sys_security_acl_7baec61b1b12001082ecdd3cdc4bcba7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_442386_grocmgr_stock_master</description><name>x_442386_grocmgr_stock_master</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-17 20:03:24</sys_created_on><sys_id>7baec61b1b12001082ecdd3cdc4bcba7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_442386_grocmgr_stock_master</sys_name><sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package><sys_policy/><sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope><sys_update_name>sys_security_acl_7baec61b1b12001082ecdd3cdc4bcba7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-17 20:03:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1810204590</payload_hash>
+        <record_name>x_442386_grocmgr_stock_master</record_name>
+        <reverted_from/>
+        <source>176b82931b12001082ecdd3cdc4bcb93</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 20:03:24</sys_created_on>
+        <sys_id>33aec61b1b12001082ecdd3cdc4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16fb51a67130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 20:03:24</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>7baec61b7612001071bd0733636af9a9</update_guid>
+        <update_guid_history>7baec61b7612001071bd0733636af9a9:1810204590</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-17 20:55:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>31df8b3d9212429095e78c0c0a848100</sys_id>
+        <sys_metadata>7baec61b1b12001082ecdd3cdc4bcba7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_442386_grocmgr_stock_master</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_parent display_value="">c8bec61b1b12001082ecdd3cdc4bcbb8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_scope_delete display_value="">38742826a838431c9f962dcf1e6a6704</sys_scope_delete>
+        <sys_update_name>sys_security_acl_7baec61b1b12001082ecdd3cdc4bcba7</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_7baec61b1b12001082ecdd3cdc4bcba7">33aec61b1b12001082ecdd3cdc4bcbaa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-17 20:55:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

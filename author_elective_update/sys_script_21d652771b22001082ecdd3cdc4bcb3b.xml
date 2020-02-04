@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_442386_grocmgr_invoice_lineitem</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Test LineItem Insert</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	gs.info('current.number: '+current.number);
+	gs.info('current.invoice.number: '+current.invoice.number);
+	gs.info('current.item.number: '+current.item.number);
+	
+	var inv = new GlideRecord('x_442386_grocmgr_invoice');
+	inv.addQuery('number', current.invoice.number);
+	
+	if(inv.next())
+	{
+		gs.info("Invoice found");
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-31 20:13:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21d652771b22001082ecdd3cdc4bcb3b</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Test LineItem Insert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_update_name>sys_script_21d652771b22001082ecdd3cdc4bcb3b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 20:00:37</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=21d652771b22001082ecdd3cdc4bcb3b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</application>
+        <file_path/>
+        <instance_id>e2095f7adb47b74491232f17d49619b0</instance_id>
+        <instance_name>dev91004</instance_name>
+        <name>sys_script_21d652771b22001082ecdd3cdc4bcb3b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_442386_grocmgr_invoice_lineitem&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Test LineItem Insert&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	gs.info('current.number: '+current.number);
+	gs.info('current.invoice.number: '+current.invoice.number);
+	gs.info('current.item.number: '+current.item.number);
+	
+	var inv = new GlideRecord('x_442386_grocmgr_invoice');
+	inv.addQuery('number', current.invoice.number);
+	
+	if(inv.next())
+	{
+		gs.info("Invoice found");
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-31 20:13:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;21d652771b22001082ecdd3cdc4bcb3b&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test LineItem Insert&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Grocery Manager" source="x_442386_grocmgr"&gt;1b6b82931b12001082ecdd3cdc4bcb91&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Grocery Manager"&gt;1b6b82931b12001082ecdd3cdc4bcb91&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_21d652771b22001082ecdd3cdc4bcb3b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-03 20:00:37&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=21d652771b22001082ecdd3cdc4bcb3b"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1218852244</payload_hash>
+        <record_name>Test LineItem Insert</record_name>
+        <reverted_from/>
+        <source>176b82931b12001082ecdd3cdc4bcb93</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 20:00:37</sys_created_on>
+        <sys_id>4111b1781b72001082ecdd3cdc4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1700ca3f99d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 20:00:37</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>4911b178ab720010ff69bc7438bf5d65</update_guid>
+        <update_guid_history>4911b178ab720010ff69bc7438bf5d65:1218852244,0f603178857200106f73edd0310f163d:896109699,eba72130787200108739fb57851f2b6b:1520055363,4b47a1f82d3200102b177eb0d1ad3f25:1409537213,77e6edfc6b320010f0b74f90ebef325f:2084389497,696f113816320010b8fddf13577be36e:-1750127997,adad1df43d320010c50233c50e721ca0:665530318,bd7d59f4f83200103a0f85eb04905db7:402928340,725cddf08d3200109585243b2c978528:-1645885227,296d5a3f11220010c5fb9fe33e338995:402928340,a03d123fb32200109cae201148773dd0:-932115610,efbcd6fbf8220010ecba02011d4d3888:-743302277,262cd2fbf5220010ddba42d3724eb9e1:1615147574,1edb1ebbba2200104d9257bf6b77642a:1243419832,ec7b167b5322001056c72c28db4efae7:-528438596,5c0a127b48220010722e2fddb9d2f0ff:921489347,11995a3b0622001039eab6fc2c963b2f:1257694960,9b09563b2e2200103e13885f21487d37:884760190,52889af7d622001036e303330a571135:224306559,1488d6f7ea220010fb90166f84ca24c0:742501468,c4189ab7bf2200108fb41a66a018bbe0:2046725421,652716b7c62200102457a4f260f5457d:-1943374179</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-02-03 20:10:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>0b3f3c14b59645fa81cab42a0e3445c4</sys_id>
+        <sys_metadata>21d652771b22001082ecdd3cdc4bcb3b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test LineItem Insert</sys_name>
+        <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+        <sys_parent display_value="Invoice Lineitem">74b6096e1b22001082ecdd3cdc4bcb75</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+        <sys_scope_delete display_value="">38742826a838431c9f962dcf1e6a6704</sys_scope_delete>
+        <sys_update_name>sys_script_21d652771b22001082ecdd3cdc4bcb3b</sys_update_name>
+        <sys_update_version display_value="sys_script_21d652771b22001082ecdd3cdc4bcb3b">4111b1781b72001082ecdd3cdc4bcb66</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-02-03 20:10:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

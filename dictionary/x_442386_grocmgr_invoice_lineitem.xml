@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Invoice Lineitem" max_length="40" name="x_442386_grocmgr_invoice_lineitem" type="collection">
+        <element default="0" label="Amount" max_length="9" name="amount" read_only="true" type="string"/>
+        <element label="Invoice Number" max_length="32" name="invoice" read_only="true" reference="x_442386_grocmgr_invoice" type="reference"/>
+        <element display="true" label="Item" mandatory="true" max_length="32" name="item" reference="x_442386_grocmgr_item_master" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Lineitem Code" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="0" label="Quantity" mandatory="true" max_length="3" name="quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date/Time" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="New Price" max_length="20" name="u_price_2" type="price"/>
+        <index name="index">
+            <element name="item"/>
+        </index>
+        <index name="index2">
+            <element name="invoice"/>
+        </index>
+    </element>
+</database>

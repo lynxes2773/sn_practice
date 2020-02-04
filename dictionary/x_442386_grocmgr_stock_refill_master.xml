@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Stock Refill Master" max_length="40" name="x_442386_grocmgr_stock_refill_master" type="collection">
+        <element label="Item" mandatory="true" max_length="32" name="item" reference="x_442386_grocmgr_item_master" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Quantity" mandatory="true" max_length="40" name="quantity" type="integer"/>
+        <element label="Refill Batch Number" mandatory="true" max_length="10" name="refill_batch_number" type="string"/>
+        <index name="index">
+            <element name="item"/>
+        </index>
+    </element>
+</database>

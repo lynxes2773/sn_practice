@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Invoice" max_length="40" name="x_442386_grocmgr_invoice" type="collection">
+        <element default="0" label="Invoice Amount" max_length="11" name="invoice_amount" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Invoice Number" max_length="40" name="number" primary="true" read_only="true" type="string"/>
+        <element default="0" label="Pre-Tax Amount" max_length="9" name="pre_tax_amount" type="string"/>
+        <element default="0" label="Tax Amount" max_length="9" name="tax_amount" type="string"/>
+        <element default="4.5" label="Tax Rate" max_length="5" name="tax_rate" type="string"/>
+    </element>
+</database>

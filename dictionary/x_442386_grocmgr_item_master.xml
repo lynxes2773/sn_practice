@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Item Master" max_length="40" name="x_442386_grocmgr_item_master" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Item Name" mandatory="true" max_length="40" name="item_name" type="string"/>
+        <element label="Item Price" mandatory="true" max_length="15" name="item_price" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" primary="true" read_only="true" type="string"/>
+        <element default="0" label="Quantity" mandatory="true" max_length="4" name="quantity" type="integer"/>
+    </element>
+</database>

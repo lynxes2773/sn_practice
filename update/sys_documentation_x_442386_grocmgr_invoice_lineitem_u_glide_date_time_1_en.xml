@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_glide_date_time_1" label="New Date/Time" language="en" table="x_442386_grocmgr_invoice_lineitem">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_glide_date_time_1</element>
+            <help/>
+            <hint/>
+            <label>New Date/Time</label>
+            <language>en</language>
+            <name>x_442386_grocmgr_invoice_lineitem</name>
+            <plural>New Date/Times</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-27 21:05:09</sys_created_on>
+            <sys_id>06bcbd621b26001082ecdd3cdc4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>New Date/Time</sys_name>
+            <sys_package display_value="Grocery Manager" source="x_442386_grocmgr">1b6b82931b12001082ecdd3cdc4bcb91</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Grocery Manager">1b6b82931b12001082ecdd3cdc4bcb91</sys_scope>
+            <sys_update_name>sys_documentation_x_442386_grocmgr_invoice_lineitem_u_glide_date_time_1_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-27 21:05:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
